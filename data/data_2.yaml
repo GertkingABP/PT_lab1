@@ -1,0 +1,23 @@
+#students:
+#  - name: "John Doe"
+#    scores:
+#      - math: 78
+#      - physics: 82
+#      - chemistry: 65
+#  - name: "Jane Doe"
+#    scores:
+#      - math: 70
+#      - physics: 88
+#      - chemistry: 76
+
+students:
+  - name: "John Smith"
+    scores:
+      - math: 78
+      - physics: 82
+      - chemistry: 65
+  - name: "Jane Brown"
+    scores:
+      - math: 70
+      - physics: 88
+      - chemistry: 76
