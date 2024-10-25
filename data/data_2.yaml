@@ -1,0 +1,21 @@
+students:
+  - name: "John Smith"
+    scores:
+      - math: 78
+      - physics: 82
+      - chemistry: 65
+  - name: "Jane Brown"
+    scores:
+      - math: 70
+      - literature: 88
+      - history: 76
+  - name: "Antony Hopkins"
+    scores:
+      - algebra: 90
+      - geometry: 83
+      - physics: 72
+  - name: "Ann White"
+    scores:
+      - biology: 73
+      - math: 68
+      - chemistry: 91
