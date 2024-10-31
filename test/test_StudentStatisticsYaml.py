@@ -33,15 +33,6 @@ class TestStudentStatisticsYaml:
             print(student)
         assert student
 
-# def test_no_qualifying_student(self, yaml_data):
-#     """Тест, когда нет студента с мин баллами"""
-#     student = yaml_data.find_student_with_min_scores(min_scr=76)
-#     if student == "No student found with the minimum required scores.":
-#         print(student)
-#     else:
-#         print(f"Student found with min 90 points in 3 subjects: {student}")
-#     assert student
-
     def test_find_high_achievers(self, yaml_data):
         """Тест на нахождение студентов с высокими баллами (90+) по каждому."""
         high_achievers = yaml_data.find_high_achievers()
