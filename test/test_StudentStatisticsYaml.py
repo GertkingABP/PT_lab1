@@ -16,7 +16,8 @@ def yaml_data():
             {'name': 'Max Lee', 'scores': [100, 90, 88]},
             {'name': 'Anton Ardy', 'scores': [10, 0, 8]},
             {'name': 'Joe Winter', 'scores': [78, 80, 94]},
-            {'name': 'Veronica Iv', 'scores': [99, 98, 97]}
+            {'name': 'Veronica Iv', 'scores': [99, 98, 97]},
+            {'name': 'Vadim Ring', 'scores': [60, 59, 35]}
         ]
     }
     return StudentStatisticsYaml(data)
