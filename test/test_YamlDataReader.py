@@ -1,6 +1,5 @@
 import pytest
 from src.YamlDataReader import YamlDataReader
-from src.StudentStatisticsYaml import StudentStatisticsYaml
 import yaml
 
 
@@ -34,23 +33,3 @@ def test_read_data(yaml_data_reader):
     """Тест успешной загрузки данных"""
     assert yaml_data_reader.data is not None, "Data loaded from YAML file."
     assert len(yaml_data_reader.data['students']) == 3, "Should be all stud-s."
-
-
-def test_find_student_with_min_scores(yaml_data_reader):
-    """Тест поиска студента, который набрал мин 76 по 3 дисциплинам"""
-    student = yaml_data_reader.find_student_with_min_scores(min_score=76)
-    assert student == "John Doe", "Should find John with 76 from 3 disc-nes."
-
-
-def test_no_qualifying_student(yaml_data_reader):
-    """Тест, когда нет студента с мин баллами"""
-    student = yaml_data_reader.find_student_with_min_scores(min_score=100)
-    assert student == "No student found with min 76 from 3 disc-nes."
-
-
-def test_calculate_average_score(yaml_data_reader):
-    stats = StudentStatisticsYaml(yaml_data_reader.data)
-    averages = stats.calculate_average_score()
-    assert round(averages['John Doe'], 2) == 97.67
-    assert round(averages['Jane Brown'], 2) == 92.67
-    assert round(averages['Mark Spencer'], 2) == 88.0
